@@ -1,7 +1,56 @@
-body {
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-h2 {
-  
+body {
+  font-style: normal;
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #000;
+  background-color: #fff;
+  line-height: 24px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 93.16px 50px 95.19px 50px;
+}
+
+.header__logo {
+  display: block;
+  justify-self: center;
+  align-self: center;
+  width: 130px;
+}
+
+.header__logo-image {
+  width: 100%;
+}
+
+.navigation__list {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.navigation__list-with-circle {
+  list-style: circle;
+  text-decoration: underline;
+}
+
+.address {
+  font-style: normal;
+}
+
+.header__address {
+  max-width: 240px;
+  justify-self: end;
+}
+
+.address__item {
+  text-underline-position: under;
 }
